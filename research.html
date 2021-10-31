@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!---------------------------------------------------->	
+	<!--Navigation menu section-->	
+	<div class="CurtainMenu">
+	
+		<!--Icon and Tagline-->
+		<div class="logo-tagline">
+			<div class="logo">
+				<img src="Images/global.png"/>
+			</div>
+			<div class="tagline">ITWD6.408
+			</div>
+		</div>
+		
+		<!--Desktop horizontal-menu-->
+		<div class="desktop-menu">
+			<div class="horizontal-nav">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="forms.html">FORMS</a></li>
+					<li><a href="jsaon.html">XML/JSON</a></li>
+					<li><a href="javascript.html">JAVASCRIPT</a></li>
+					<li class="active"><a href="research.html">RESEARCH</a></li>	
+				</ul>
+			</div>
+		</div>
+		 
+		<!--Curtain Menu Icon-->
+		<p class="menu-icon-style" onclick="openNav()">≡</p>
+	</div>
+	
+	<!--Hide the curtain menu as default when loading the page-->
+	<nav id="curtain-nav">
+		<!--Add a close button (X) hyperlink on the top left corner-->
+		<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+		<div class="curtain-nav-content">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="forms.html">FORMS</a></li>
+				<li><a href="jsaon.html">XML/JSON</a></li>
+				<li><a href="javascript.html">JAVASCRIPT</a></li>
+				<li class="active"><a href="research.html">RESEARCH</a></li>	
+			</ul>
+		</div>
+	</nav>
+	
+	<!---------------------------------------------------->	
+	<!--Main content section-->
+
+	<main>
+		<section class="competences">
+			<div class="flip-box-area">
+				<!--Create a 1x3 card layout using CSS flex box -->
+				<div class="topics_container" >
+					<div class="topics_box_research">
+					<h3>Copyright CC license</h3><br>
+						<!--First Flip box-->
+						<div class="flip-box">
+							<div class="flip-box-inner">
+								<!--Front side of the Flip Box-->
+								<div class="flip-box-front-research">	
+
+									<img src="Images/CC.png" alt="CC image">										
+								</div>
+								<!--Back side of the Flip Box-->
+								<div class="flip-box-back-research">		
+									<h3>CC & C laws</h3>
+									<p>	Copyright laws in short help prevent people from steeling your work and using it for thier own purposes.  Creative Commons laws allows you to share your work how see fit.  Whether it is "free for all", "free to use with refrence" or one of many other combinations at your discretion.
+									</p>
+									<p> Read more <a href="https://creativecommons.org/licenses/">CC Laws</a>
+									</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+					
+					<div class="topics_box_research">						
+						<!--Add the second Flip box-->
+						<h3>Privacy</h3><br>
+						<div class="flip-box">
+							<div class="flip-box-inner">
+								<!--Front side of the Flip Box-->
+								<div class="flip-box-front-research">	
+
+									<img src="Images/privacy.png" alt="privacy image">										
+								</div>
+								<!--Back side of the Flip Box-->
+								<div class="flip-box-back-research">		
+									<h3>Privacy</h3>
+									<p>The NZ privacy act of 2020 covers all websites.  It ensures any information that is collected on an individual is stored in a secure manner and is not freely avaliable to anyone.  It also covers how personnal data is used. 
+									</p>
+									<p> Read more <a href="https://www.digital.govt.nz/standards-and-guidance/design-and-ux/usability/privacy-statements-for-websites?rf=1">NZ Privacy</a>
+									</p>	
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="topics_box_research">											
+						<!--Add the third Flip box-->
+						<h3>Improve you SEO</h3><br>
+						<div class="flip-box">
+							<div class="flip-box-inner">
+								<!--Front side of the Flip Box-->
+								<div class="flip-box-front-research">
+									<img src="Images/seo.jpg" alt="seo image">										
+								</div>
+								<!--Back side of the Flip Box-->
+								<div class="flip-box-back-research">		
+									<h3>SEO improvement</h3>
+									<p> Five ways to improve your SEO. <br>1. Publish relevant content.<br>Ensure you are publishing content that is relative to your website and use good keywords.<br>2. Update your content<br>By making sure content is upto date your traget audence will stay longer on your site
+									</p>
+									<p class="skill-text"> Read more <a href="https://www.mtu.edu/umc/services/websites/seo/">SEO improvement</a>
+									</p>
+								</div>
+							</div>
+						</div>										
+					</div>					
+				</div>				
+			</div>						
+		</section>	
+		<section class="competences">
+			<div class="flip-box-area">
+				<!--Create a 1x3 card layout using CSS flex box -->
+				<div class="topics_container" >
+					<div class="topics_box_research">
+					<h3>Web Hosting</h3><br>
+						<!--First Flip box-->
+						<div class="flip-box">
+							<div class="flip-box-inner">
+								<!--Front side of the Flip Box-->
+								<div class="flip-box-front-research">	
+
+									<img src="Images/web.jpg" alt="Hosting image">										
+								</div>
+								<!--Back side of the Flip Box-->
+								<div class="flip-box-back-research">		
+									<h3>Web Hosting</h3>
+									<p>Selecting a type of hosting depends on a few factors.  The mian ones are your budget, how much traffic your a expecting and most importantly what features do you want.  Once you can answer these three question you will be able to find a service that meets your expectations.
+									</p>
+									<p> Read more <a href="https://jjlyonsmarketing.com/resources/different-types-of-web-hosting-and-whats-right-for-you/">Diffrent types of hosting</a>
+									</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+					
+					<div class="topics_box_research">						
+						<!--Add the second Flip box-->
+						<h3>Website  performance and Maintenance</h3><br>
+						<div class="flip-box">
+							<div class="flip-box-inner">
+								<!--Front side of the Flip Box-->
+								<div class="flip-box-front-research">	
+
+									<img src="Images/performance.png" alt="performance image">										
+								</div>
+								<!--Back side of the Flip Box-->
+								<div class="flip-box-back-research">		
+									<h3>Website  performance and Maintenance</h3>
+									<p>To ensure you website is performing at peak performance you should monitor performance across all platoforms.  Then update your content and monitor the hosting enviroment for any attacks that could impact your wesbite.  You should also keep an eye on your website analytics.
+									</p>
+									<p> Read more <a href="https://websitemaintenance.us/blog/how-website-maintenance-will-improve-website-performance/">Here!!</a>
+									</p>	
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="topics_box_research">											
+						<!--Add the third Flip box-->
+						<h3>Web Security</h3><br>
+						<div class="flip-box">
+							<div class="flip-box-inner">
+								<!--Front side of the Flip Box-->
+								<div class="flip-box-front-research">
+									<img src="Images/security.jpg" alt="security image">										
+								</div>
+								<!--Back side of the Flip Box-->
+								<div class="flip-box-back-research">		
+									<h3>Web Security</h3>
+									<p>Web security is designed to keep you and your data safe while using the internet.  It will prevent hackers from gaining control of you devices and prevent them from causing damage or stealing your property.  To ensure you have good security always use secure gateways and do not click on "funny links" in emails.
+									</p>
+									<p class="skill-text"> Read more <a href="https://www.mimecast.com/content/web-security/#:~:text=In%20general%2C%20web%20security%20refers,users%20and%20companies%20from%20risk.">mimecast</a>
+									</p>
+								</div>
+							</div>
+						</div>										
+					</div>					
+				</div>				
+			</div>						
+		</section>	
+	</main>
+		<!---------------------------------------------------->	
+	<!--Footer section-->
+	<footer>
+		<div>Created by: Eamon McCabe <br />
+			Contact me at: <a href="drwho00769@yahoo.com.au">drwho00769@yahoo.com.au</a>
+		</div>
+	</footer>
+	
+	<!--Embed the js file at the bottom of the html file-->
+	<script type="text/javascript" src="JS/myjavascript.js">
+	</script>
+
+</body>
+</html>
+

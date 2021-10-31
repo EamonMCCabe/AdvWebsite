@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!---------------------------------------------------->	
+	<!--Navigation menu section-->	
+	<div class="CurtainMenu">
+	
+		<!--Icon and Tagline-->
+		<div class="logo-tagline">
+			<div class="logo">
+				<img src="Images/global.png"/>
+			</div>
+			<div class="tagline">ITWD6.408
+			</div>
+		</div>
+		
+		<!--Desktop horizontal-menu-->
+		<div class="desktop-menu">
+			<div class="horizontal-nav">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="forms.html">FORMS</a></li>
+					<li class="active"><a href="jsaon.html">XML/JSON</a></li>
+					<li><a href="javascript.html">JAVASCRIPT</a></li>
+					<li><a href="research.html">RESEARCH</a></li>	
+				</ul>
+			</div>
+		</div>
+		 
+		<!--Curtain Menu Icon-->
+		<p class="menu-icon-style" onclick="openNav()">≡</p>
+	</div>
+	
+	<!--Hide the curtain menu as default when loading the page-->
+	<nav id="curtain-nav">
+		<!--Add a close button (X) hyperlink on the top left corner-->
+		<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+		<div class="curtain-nav-content">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="forms.html">FORMS</a></li>
+				<li class="active"><a href="jsaon.html">XML/JSON</a></li>
+				<li><a href="javascript.html">JAVASCRIPT</a></li>
+				<li><a href="research.html">RESEARCH</a></li>	
+			</ul>
+		</div>
+	</nav>
+	
+	<!---------------------------------------------------->	
+	<!--Main content section-->
+
+	<main>
+
+	<!--Header section-->
+	 <header>
+		<h1>Load Demo Json</h1>
+		<h2>View JSON File at <a href="http://danieldangs.com/itwd6-408/json/contacteit.json">http://danieldangs.com/itwd6-408/json/contact-eit.json</a></h2>
+		<button onclick="loadJSONFile()">Load JSON File</button>
+	 </header>
+	 <!--Content section-->
+	<section>
+		<div id="json-data"></div>
+	</section>
+	
+	 <header>
+		<h1>Load Q&A Json</h1>
+		<h2>View JSON File at <a href="http://danieldangs.com/itwd6-408/json/faqs.json">http://danieldangs.com/itwd6-408/json/faqs.json</a></h2>
+		<button onclick="loadJSONQA()">Load JSON File</button>
+	 </header>
+	 <!--Content section-->
+	<section>
+		<div id="json-data2"></div>
+	</section>	
+	
+	 <header>
+		<h1>Load Fruit Json</h1>
+		<h2>View JSON File at <a href="http://danieldangs.com/itwd6-408/json/fruit.json">http://danieldangs.com/itwd6-408/json/fruit.json</a></h2>
+		<button onclick="loadJSONFRUIT()">Load JSON File</button>
+	 </header>
+	 <!--Content section-->
+	<section>
+		<div id="json-data3"></div>
+	</section>		
+
+	</main>
+	
+	<!---------------------------------------------------->	
+	<!--Footer section-->
+	<footer>
+		<div>Created by: Eamon McCabe <br />
+			Contact me at: <a href="drwho00769@yahoo.com.au">drwho00769@yahoo.com.au</a>
+		</div>
+	</footer>
+	
+	<!--Embed the js file at the bottom of the html file-->
+	<script type="text/javascript" src="JS/myjavascript.js">
+	</script>
+
+	<script>
+		//call the show demo (0)
+			showDemo(0);
+	</script>
+
+</body>
+</html>
+

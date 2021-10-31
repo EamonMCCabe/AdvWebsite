@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!---------------------------------------------------->	
+	<!--Navigation menu section-->	
+	<div class="CurtainMenu">
+	
+		<!--Icon and Tagline-->
+		<div class="logo-tagline">
+			<div class="logo">
+				<img src="Images/global.png"/>
+			</div>
+			<div class="tagline">ITWD6.408
+			</div>
+		</div>
+		
+		<!--Desktop horizontal-menu-->
+		<div class="desktop-menu">
+			<div class="horizontal-nav">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="forms.html">FORMS</a></li>
+					<li><a href="jsaon.html">XML/JSON</a></li>
+					<li class="active"><a href="javascript.html">JAVASCRIPT</a></li>
+					<li><a href="research.html">RESEARCH</a></li>	
+				</ul>
+			</div>
+		</div>
+		 
+		<!--Curtain Menu Icon-->
+		<p class="menu-icon-style" onclick="openNav()">≡</p>
+	</div>
+	
+	<!--Hide the curtain menu as default when loading the page-->
+	<nav id="curtain-nav">
+		<!--Add a close button (X) hyperlink on the top left corner-->
+		<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+		<div class="curtain-nav-content">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="forms.html">FORMS</a></li>
+				<li><a href="jsaon.html">XML/JSON</a></li>
+				<li class="active"><a href="javascript.html">JAVASCRIPT</a></li>
+				<li><a href="research.html">RESEARCH</a></li>	
+			</ul>
+		</div>
+	</nav>
+	
+	<!---------------------------------------------------->	
+	<!--Main content section-->
+
+	<main>
+		<!--Internal menu: contain 4 buttons-->
+		<section class="internal-menu-area">	
+		
+			<div class="internal-menu-row">
+				<div class="internal-menu-row-box">
+					<button class="demo-button" onclick="showDemo(0)">Demo 1</button>
+				</div>
+				<div class="internal-menu-row-box">
+					<button class="demo-button" onclick="showDemo(1)">Demo 2</button>
+				</div>
+			</div>
+			
+			<div class="internal-menu-row">
+				<div class="internal-menu-row-box">
+					<button class="demo-button" onclick="showDemo(2)">Demo 3</button>
+				</div>
+				<div class="internal-menu-row-box">
+					<button class="demo-button" onclick="showDemo(3)">Demo 4</button>
+				</div>
+			</div>
+			
+		</section>
+		
+		<!--Demo area: contain 4 boxes for 4 demos-->
+		<section class="demo-area">
+			<article class="demo-box"> Demo 1
+				<div id="page_content">
+					<h2>Customize the Webpage: </h2>
+					<label>Select Text Size: </label>
+					<select id="text-size" onchange="customizeText()">	
+						<option></option>
+						<option value="35px">VERY BIG</option>
+						<option value="25px">BIG</option>
+						<option value="16px">NORMMAL</option>		
+					</select>
+
+					<br>
+					<label>Select color: </label>
+					<select id="colorOption" onchange="changeColor()">
+						<option></option>
+						<option value="red">RED</option>
+						<option value="green">GREEN</option>
+						<option value="yellow">YELLOW</option>
+						<option value="ivory">IVORY</option>
+						<option value="pink">PINK</option>
+						<option value="purple">PURPLE</option>
+					</select>					
+					<br><br>
+					<h2>Lorem Ipsum</h2>
+					<img 
+						src="https://www.typingpal.com/images/6/5/9/d/4/659d48c66b86704dd9890e1a374337013fdc755e-lorem-ipsum1x.png" 
+						alt="Image"
+						width="300px">
+					<p id="abstract">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br>
+					"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+					</p>
+					<p id="detailed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper magna id nibh finibus, ultrices molestie tellus venenatis. Curabitur gravida, tortor sit amet molestie consectetur, tortor tortor dictum leo, nec imperdiet neque leo id felis. Duis laoreet, massa in pharetra tempor, lectus turpis venenatis dui, a dictum lacus mi at diam. Cras at eros consectetur ligula dapibus viverra. Pellentesque imperdiet lectus tellus. Pellentesque faucibus diam ac venenatis dictum. Suspendisse scelerisque ultricies lacinia. Integer tristique ipsum nec sagittis porttitor. Quisque ac lacinia massa. Mauris augue augue, iaculis non facilisis ac, fermentum eu magna. Integer mattis ultrices luctus. Proin semper pellentesque eros, vel pretium lacus cursus at. Aliquam fringilla nulla vel pellentesque egestas. Nunc sed elit aliquet nisl aliquet tristique. Mauris accumsan eros at augue rutrum, quis cursus turpis elementum. Duis arcu quam, posuere at nulla et, luctus malesuada nibh.<br>
+					Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec at egestas leo. Maecenas varius malesuada metus, at malesuada massa vulputate et. Ut sit amet est eu sem vestibulum interdum quis ac est. Praesent ipsum nunc, elementum nec convallis et, fermentum eget nunc. Nullam cursus fermentum varius. Duis quis rutrum nisi, in condimentum magna. Cras tristique erat at fermentum tempor. Aenean convallis justo molestie arcu imperdiet venenatis. Sed eget massa rutrum, condimentum elit nec, lobortis magna. Curabitur non maximus mauris. Phasellus ac auctor purus. Phasellus a dignissim elit, nec semper nisi.
+					</p>
+					<button id="expandBtn" onclick="expandText()" value="MORE">MORE</button>	
+				</div>
+			</article>
+			
+			<article class="demo-box">
+				<section>
+					<h2>Manual Slideshow: Two buttons</h2>
+					<br>
+					<div>
+						<h4 id="manual-slide-title">The The Shawshank Redemption</h4>
+						<img id="manual-slide-image" src="https://www.filmsite.org/posters/shawshankredemption.jpg" height="300px">
+					</div>
+					<button onclick="previousSlide()">PREVIOUS</button>
+					<button onclick="nextSlide()">NEXT</button>						
+				</section>
+				
+				<section>				
+					<h2>Automatical Slideshow: running automatically</h2>
+					<br>
+					<div>
+						<h4 id="auto-slide-title">The The Shawshank Redemption</h4>
+						<img id="auto-slide-image" src="https://www.filmsite.org/posters/shawshankredemption.jpg" height="300px">
+					</div>	  
+					<br><br>
+					<h4>Online tutorial: Automatic Slideshow</h4>
+					<a href="https://www.w3schools.com/w3css/w3css_slideshow.asp">Online Tutorial</a>			
+				</section>	
+			</article>
+			
+			<article class="demo-box"> Demo 3
+			
+				<h2>JS: Authentication</h2>
+					<h4>Sign up</h4>
+					<label>Username: </label>
+					<input type="text" id="signup_user" placeholder="Enter username"><br>				
+					<label>Password: </label>
+					<input type="password" id="signup_password" placeholder="Enter password"><br>				
+					<input type="button" value="Sign up" onclick="createAccount()">	
+					<br>
+					<br>
+					<h4>Login</h4>
+					<label>Username: </label>
+					<input type="text" id="login_username" placeholder="Enter username">	<br>				
+					<label>Password: </label>
+					<input type="password" id="login_password" placeholder="Enter password"><br>				
+					<input type="button" value="Login" onclick="validateAccount()">		
+				</article>
+			
+			<article class="demo-box"> Demo-4
+			<h2>Add comment below a product</h2>
+			<div class="mock-product">
+				<p style="text-align: center;">Samsung Galaxy 3</p>
+				<img src="https://hnsfpau.imgix.net/5/images/detailed/157/HDNOK3.4BL.01.jpg?fit=fill&bg=0FFF&w=1500&h=844&auto=format,compress"
+				   alt="Product Image" width="100%">
+				</p style="text-align: center;">Product description: <br>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae est ligula. 
+					Cras ornare leo sed nisl pharetra, vel molestie odio lacinia. 
+					Curabitur felis ex, placerat sit amet pretium ac, porttitor in neque</p>
+			</div>
+			<br>
+			<h4>Comments: </h4>
+			<div id="comment-list">
+			</div>
+			<br>
+			<h4>Add your comment: </h4>
+			<label>Name: </label>
+			<input type="text" id="comment_name" placeholder="your name" size="90">
+			<br>
+			<label>Comment: </label><br>
+			<textarea id="comment_text" cols="100" rows="10">
+			</textarea>
+			<br>
+			<button onclick="addComment()">POST</button>	
+			
+			</article>
+			
+		</section>
+	</main>
+	
+	<!---------------------------------------------------->	
+	<!--Footer section-->
+	<footer>
+		<div>Created by: Eamon McCabe <br />
+			Contact me at: <a href="drwho00769@yahoo.com.au">drwho00769@yahoo.com.au</a>
+		</div>
+	</footer>
+	
+	<!--Embed the js file at the bottom of the html file-->
+	<script type="text/javascript" src="JS/myjavascript.js">
+	</script>
+
+	<script>
+		//call the show demo (0)
+			showDemo(0);
+	</script>
+
+</body>
+</html>
+

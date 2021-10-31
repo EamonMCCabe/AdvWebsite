@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<!--Insert Bootstrap files-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!---------------------------------------------------->	
+	<!--Navigation menu section-->	
+	<div class="CurtainMenu">
+	
+		<!--Icon and Tagline-->
+		<div class="logo-tagline">
+			<div class="logo">
+				<img src="Images/global.png"/>
+			</div>
+			<div class="tagline">ITWD6.408
+			</div>
+		</div>
+		
+		<!--Desktop horizontal-menu-->
+		<div class="desktop-menu">
+			<div class="horizontal-nav">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li class="active"><a href="forms.html">FORMS</a></li>
+					<li><a href="jsaon.html">XML/JSON</a></li>
+					<li><a href="javascript.html">JAVASCRIPT</a></li>
+					<li><a href="research.html">RESEARCH</a></li>	
+				</ul>
+			</div>
+		</div>
+		 
+		<!--Curtain Menu Icon-->
+		<p class="menu-icon-style" onclick="openNav()">≡</p>
+	</div>
+	
+	<!--Hide the curtain menu as default when loading the page-->
+	<nav id="curtain-nav">
+		<!--Add a close button (X) hyperlink on the top left corner-->
+		<a href="javascript:void(0)" class="nav-close-button" onclick="closeNav()">❌</a>
+		<div class="curtain-nav-content">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li class="active" ><a href="forms.html">FORMS</a></li>
+				<li><a href="jsaon.html">XML/JSON</a></li>
+				<li><a href="javascript.html">JAVASCRIPT</a></li>
+				<li><a href="research.html">RESEARCH</a></li>	
+			</ul>
+		</div>
+	</nav>
+	
+	<!---------------------------------------------------->	
+	<!--Main content section-->
+
+	<main>
+	
+	<section class="internal-menu-area-forms">	
+	
+		<div class="internal-menu-row-box-forms">
+			<div class="internal-menu-row-box-forms">
+				<button class="demo-button" onclick="showDemo(0)">HTML Form</button>
+			</div>
+			<div class="internal-menu-row-box-forms">
+				<button class="demo-button" onclick="showDemo(1)">Google Form</button>
+			</div>
+
+		</div>
+
+
+		<section class="demo-area">
+			<article class="demo-box">
+				<!--HTML FORM USING BOOTSTRAP-->
+				<hr>
+				<section class="container bg-secondary">
+					<h2>Mobile Technology Form</h2>
+					
+					<form>
+					  <div class="form-group row">
+						<label for="FirstName" class="col-sm-2 col-form-label">First Name:</label>
+						<div class="col-sm-10">
+						  <input type="FirstName1" class="form-control" id="FirstName" placeholder="First Name...">
+						</div>
+					  </div>
+					  
+					  <div class="form-group row">
+						<label for="LastName" class="col-sm-2 col-form-label">Last Name</label>
+						<div class="col-sm-10">
+						  <input type="LastName1" class="form-control" id="LastName" placeholder="Last Name...">
+						</div>
+					  </div>
+					  <h3>Address</h3>
+					  <div class="form-group row">
+						<label for="AddLine" class="col-sm-2 col-form-label">Line 1</label>
+						<div class="col-sm-10">
+						  <input type="AddLine1" class="form-control" id="AddLine1">
+						</div>
+					  </div>
+					  <div class="form-group row">
+						<label for="Addline" class="col-sm-2 col-form-label">Line 2:</label>
+						<div class="col-sm-10">
+						  <input type="AddLine2" class="form-control" id="AddLine2">
+						</div>
+					  </div>
+					  </div>
+					  <div class="form-group row">
+						<label for="Town-city" class="col-sm-2 col-form-label">Town/City:</label>
+						<div class="col-sm-10">
+						  <input type="Town-city" class="form-control" id="Town-city">
+						</div>
+					  </div>
+					  
+					  <fieldset class="form-group">
+						<div class="form-check">
+						  <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+						  <div class="col-sm-10">
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+							  <label class="form-check-label" for="gridRadios1">
+								Male
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+							  <label class="form-check-label" for="gridRadios2">
+								Female
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+							  <label class="form-check-label" for="gridRadios2">
+								Other
+							  </label>
+							</div>
+						  </div>
+						</div>
+					  </fieldset>
+					  
+					  <fieldset class="form-group">
+						<div class="row">
+						  <legend class="col-form-label col-sm-2 pt-0">Mobile Phone Type</legend>
+						  <div class="col-sm-10">
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+							  <label class="form-check-label" for="gridRadios1">
+								Windows
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+							  <label class="form-check-label" for="gridRadios2">
+								Apple
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+							  <label class="form-check-label" for="gridRadios2">
+								Android
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+							  <label class="form-check-label" for="gridRadios2">
+								Other
+							  </label>
+							</div>
+						  </div>
+						</div>
+					  </fieldset>
+					  
+					  <div class="form-group row">
+						<label for="selectionOption" class="col-sm-2 col-form-label">Select</label>
+						<div class="col-sm-10">
+							  <select class="form-control" id="exampleFormControlSelect1">
+								  <option>None</option>
+								  <option>2 Degrees</option>
+								  <option>Telstra</option>
+								  <option>Skinny</option>
+								  <option>Vodaphone</option>								  
+							</select>
+						</div>
+					  </div>
+					  
+					  
+					  <div class="form-group row">
+						<div class="col-sm-10">
+						  <button type="submit" class="btn btn-primary">SUBMIT</button>
+						  <button type="reset" class="btn btn-success">RESET</button>
+						</div>
+					  </div>
+					</form>	
+				</section>			
+			</article>
+			<article class="demo-box"> 
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1iAy3Fm19uSWcVRd2IjP_ctQWp4giwhll_V8_kE5-KY0hZw/viewform?embedded=true" width="100%" height="1181" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+			</article>
+		</section>
+	</main>
+	
+	<!---------------------------------------------------->	
+	<!--Footer section-->
+	<footer>
+		<div>Created by: Eamon McCabe <br />
+			Contact me at: <a href="drwho00769@yahoo.com.au">drwho00769@yahoo.com.au</a>
+		</div>
+	</footer>
+	
+	<!--Embed the js file at the bottom of the html file-->
+	<script type="text/javascript" src="JS/myjavascript.js">
+	</script>
+
+	<script>
+		//call the show demo (0)
+			showDemo(0);
+	</script>
+
+</body>
+</html>
+
